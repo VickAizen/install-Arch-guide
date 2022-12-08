@@ -10,7 +10,7 @@
 -$ cfdisk /dev/<disk_partition>
 	# search for cfdisk in google
 	# format the disk in GPT
-	# Make partition's root, home, swap
+	# Make partitions root, home, swap
 
 	# Layout disk
 	  root: + 30GB
@@ -28,7 +28,7 @@
 
 -$ mount /dev/<root_partition> /mnt
 
--$ mkdir /nmt/home
+-$ mkdir /mnt/home
 
 -$ mkdir /boot
 
@@ -42,11 +42,11 @@
 
 # Packages
 
--$ pacstrap /mnt base base-devel linux linux-firmware
-
 -$ pacman -Sy reflector
 
 -$ reflector --country Brazil --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+
+-$ pacstrap /mnt base base-devel linux linux-firmware
 
 # fstab
 

@@ -104,46 +104,10 @@ vim /etc/locale.gen
 
 -$ grub-mkconfig -o /boot/grub/grub.cfg
 
+# finished
+
 -$ exit
 
 -$ reboot
 
 # remove the media boot and wait...
-
-# Installig drivers e graphic interface
-
--$ pacman -S xorg-server
-
-(driver intel)
--$ pacman -S xf86-video-intel libgl mesa
-
-(driver nvida)
--$ pacman -S nvidia nvidia-libgl mesa
-
-(driver amd)
--$ pacma -S xf86-video-amdgpu mesa
-
-(VM)
--$ pacman -S virtualbox-guest-utils virtualbox-guest-arch mesa mesa-libgl
-
-# KDE
-
--# pacman -S plasma konsole firefox
-
--# pacman -S sddm
-
--# systemctl enable sddm
-
--# reboot
-
-# XFCE
-
--# pacman -S xfce64 xfce64-goodies xfce4-terminal firefox
-
--# pacman -S sddm
-
--# systemctl enable sddm
-
--# reboot
-
-END...

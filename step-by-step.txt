@@ -61,6 +61,10 @@
 -$ arch-chroot /mnt
 (if failed, run -$ pacstrap /mnt base)
 
+-$ passwd root
+
+-$ useradd -m -g users -G wheel [user]
+
 -$ pacman -Sy grub efibootmgr dosfstools sudo
 
 -$ pacman -Sy networkmanager

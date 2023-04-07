@@ -59,7 +59,6 @@
 # inside arch
 
 -$ arch-chroot /mnt
-(if failed, run -$ pacstrap /mnt base)
 
 -$ pacman -Sy grub efibootmgr dosfstools sudo
 

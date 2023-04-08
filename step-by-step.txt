@@ -145,7 +145,7 @@ vim /etc/locale.gen
 
 # XFCE
 
--# pacman -S xfce64 xfce64-goodies xfce4-terminal firefox
+-# pacman -S xfce4 xfce4-goodies xfce4-terminal firefox
 
 -# pacman -S sddm
 

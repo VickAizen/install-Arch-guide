@@ -119,7 +119,7 @@ vim /etc/locale.gen
 
 # Installig drivers e graphic interface
 
--$ pacman -S xorg-server
+-$ pacman -S xorg-server xorg-xinit xorg-apps
 
 (driver intel)
 -$ pacman -S xf86-video-intel libgl mesa

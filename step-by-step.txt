@@ -5,7 +5,13 @@
 
 # Wifi
 
--$ wifi-menu
+-$ iwctl
+
+[iwd] - station list
+
+[iwd] - station wlan0 essid
+
+[iwd] - passwd lan
 
 # HD/SSD
 
@@ -67,7 +73,7 @@
 
 -$ pacman -Sy grub efibootmgr dosfstools sudo
 
--$ pacman -Sy networkmanager
+-$ pacman -Sy networkmanager iwd dhcpcd
 
 -$ pacman -Sy wpa_suplipplicant wireless_tools dialog
 
